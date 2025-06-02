@@ -6,9 +6,10 @@ import sh
 
 
 class LibSDL2Recipe(BootstrapNDKRecipe):
-    version = "2.28.5"
+    version = "2.32.6-alpha"
     url = "https://github.com/libsdl-org/SDL/releases/download/release-{version}/SDL2-{version}.tar.gz"
-    md5sum = 'a344eb827a03045c9b399e99af4af13d'
+    url = "https://github.com/lejlm233/SDL/archive/refs/tags/release-{version}.tar.gz"
+    md5sum = '82955566f783995ae6361b39e10a6ab5'
 
     conflicts = ['sdl3']
 
